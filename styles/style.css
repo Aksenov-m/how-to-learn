@@ -20,11 +20,6 @@
   /* выше установили ограничения для секции */
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-  background-color: white;
-}
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
@@ -56,6 +51,7 @@
   color: black;
   font-weight: bold;
   z-index: 3;
+  order: -1;
   }
 
 .header__square-pic {
@@ -89,7 +85,7 @@
   content:'\2192';
 }
  a {
-  text-decoration:none;
+  text-decoration: none;
  }
  .description {
   margin-top:100px;
@@ -99,7 +95,7 @@
  }
  .two-colomns__span-accent {
   font-size: 24px;
-  font-style: bold;
+  font-weight: 600;
   line-height: 34px;
  }
 .two-colomns {
@@ -132,4 +128,57 @@
 }
 p:last-child {
   margin-bottom: 0;
+}
+.digits {
+  margin-top:100px;
+  margin-bottom: 100px;}
+
+.section-title {
+ width: 60%;
+ line-height: 1.15;
+ font-size:60px;
+ font-weight: bold;
+ margin-left:auto;
+ margin-right:auto;
+ text-align: center;
+ margin-bottom:20px;
+}
+.section-subtitle {
+  width: 60%;
+  line-height: 34px;
+  font-size:24px;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+.table {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+.table__cell {
+  list-style: none;
+  min-height:5px;
+  margin-top: 60px;
+}
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+.table__cell {
+  width:250px;
+  min-height:5px;
+  margin-top: 60px;
 }
