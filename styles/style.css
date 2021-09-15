@@ -64,13 +64,13 @@
   z-index: 1;
 }
   .header__illustration {
-    position: absolute;
-    width: 765px;
-    height: 608px;
-    right: 0;
-    bottom: 0;
-    max-width:50%;
-    z-index: 2;
+  position: absolute;
+  width: 765px;
+  height: 608px;
+  right: 0;
+  bottom: 0;
+  max-width:50%;
+  z-index: 2;
   }
 .header__subtiile {
   position: absolute;
@@ -111,6 +111,7 @@
   color: #2f80ed;
   width: 175px;
   font-weight: normal;
+  margin-top:0;
 }
 .two-colomns__main-text {
   width: 80%;
@@ -181,4 +182,44 @@ p:last-child {
   width:250px;
   min-height:5px;
   margin-top: 60px;
+}
+.feynman {
+  height: 890px;
+  background: #f2f2f2 url(../images/feynman.png);
+  background-size: 867px 637px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top:100px;
+}
+.feinmann__title {
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 0;
+  text-align: center;
+  width:648px;
+  margin-bottom:70px;
+}
+.feinmann__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 0;
+  text-align: center;
+}
+.feinmann__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  position: absolute;
+  top:50%;
+  right: 48px;
+}
+.feinmann__link::after {
+  content:'\2192';
 }
