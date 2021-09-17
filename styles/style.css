@@ -1,3 +1,7 @@
+h1, h2, h3, div, img,p, section{
+  border: 1px solid red;
+  margin:0;}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -16,17 +20,13 @@
   max-height: 756px;
   position: relative;
   background-color: #f2f2f2;
+  overflow: hidden;
 }
   /* выше установили ограничения для секции */
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 /* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
+
 .logo {
   background-image: url(/images/logo_place_header.svg);
   background-size: contain;
@@ -39,7 +39,9 @@
   position: absolute;
   left: 64px;
   top: 30px;
+  order: 1;
 }
+
  .header__title {
   display: flex;
   margin: auto;
@@ -51,8 +53,7 @@
   color: black;
   font-weight: bold;
   z-index: 3;
-  order: -1;
-  }
+}
 
 .header__square-pic {
   position: absolute;
@@ -91,7 +92,7 @@
   margin-top:100px;
  }
   .description p {
-    margin-top:0;
+  margin-top:0;
  }
  .two-colomns__span-accent {
   font-size: 24px;
@@ -132,8 +133,8 @@ p:last-child {
 }
 .digits {
   margin-top:100px;
-  margin-bottom: 100px;}
-
+  margin-bottom: 100px;
+}
 .section-title {
  width: 60%;
  line-height: 1.15;
@@ -156,16 +157,20 @@ p:last-child {
   width: 1100px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-around;
   position: relative;
+  padding: 0;
 }
 .table__cell {
   list-style: none;
   min-height:5px;
   margin-top: 60px;
+  width: 250px;
 }
 .table__heading {
   line-height: 1.15;
@@ -178,11 +183,7 @@ p:last-child {
   font-weight: normal;
   margin-top: 20px;
 }
-.table__cell {
-  width:250px;
-  min-height:5px;
-  margin-top: 60px;
-}
+
 .feynman {
   height: 890px;
   background: #f2f2f2 url(../images/feynman.png);
@@ -191,28 +192,29 @@ p:last-child {
   background-repeat: no-repeat;
   position: relative;
   padding-top:100px;
+  padding-bottom: 0;
 }
-.feinmann__title {
+.feinmann-title {
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0;
   text-align: center;
   width:648px;
   margin-bottom:70px;
 }
-.feinmann__subtitle {
+.feinmann-subtitle {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0;
   text-align: center;
 }
-.feinmann__link {
+.feinmann-link {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -220,6 +222,46 @@ p:last-child {
   top:50%;
   right: 48px;
 }
-.feinmann__link::after {
+.feinmann-link::after {
   content:'\2192';
+}
+
+.kaufman {
+  background-color: #1f1f1f;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  z-index: 1;
+}
+.section__title_theme_dark {
+  color: white;
+}
+.section__subtitle_theme_dark {
+  color: white;
+}
+.table__cell_theme_dark{
+width: 200px;
+margin-top: 0;
+border: 0;
+}
+.table__heading_theme_dark{
+  color: white;
+  padding-top: 80px;
+}
+.table__text_theme_dark {
+  color: white;
+}
+.kaufman-triangle {
+ background-image: url(../images/kaufman-triangle.svg);
+ position: absolute;
+ width: 877px;
+ height: 877px;
+ right:-210px;
+ top: 0;
+ background-repeat: no-repeat;
+ background-size: contain;
+ z-index: -1;
+ background-position: center;
 }
