@@ -1,4 +1,4 @@
-h1,
+/*h1,
 h2,
 h3,
 div,
@@ -6,8 +6,7 @@ img,
 p,
 section {
  /* border: 1px solid red; */
-  margin: 0;
-}
+  /* margin: 0;*/
 
 .page {
   min-width: 1100px;
@@ -60,6 +59,7 @@ section {
   font-weight: bold;
   z-index: 3;
   align-self: center;
+  padding: 0;
 }
 
 .header__square-pic {
@@ -72,8 +72,9 @@ section {
   z-index: 1;
 }
 
-.header__illustration {
+.header__main-illustration {
   position: absolute;
+  background-size: cover;
   width: 765px;
   height: 608px;
   right: 0;
@@ -90,10 +91,20 @@ section {
   left: 64px;
   width: 388px;
   font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.header_link {
+  color: #2f80ed;
+  line-height: 25px;
+  font-size: 18px;
+  padding: 0;
 }
 
 .header_link::after {
   content: "\2192";
+  color: #2f80ed;
 }
 
 a {
@@ -129,6 +140,7 @@ a {
   width: 175px;
   font-weight: normal;
   margin-top: 0;
+  margin: 0;
 }
 
 .two-colomns__main-text {
@@ -145,6 +157,7 @@ a {
   margin-top: 30px;
   margin-bottom: 30px;
   font-weight: normal;
+  padding: 0;
 }
 
 p:last-child {
@@ -165,6 +178,7 @@ p:last-child {
   margin-right: auto;
   text-align: center;
   margin-bottom: 20px;
+  padding: 0;
 }
 
 .section-subtitle {
@@ -174,6 +188,7 @@ p:last-child {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
 }
 
 .table {
@@ -201,12 +216,15 @@ p:last-child {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
+  padding: 0;
+  margin: 0;
 }
 .table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   margin-top: 20px;
+  padding: 0;
 }
 
 .feynman {
@@ -230,6 +248,7 @@ p:last-child {
   text-align: center;
   width: 648px;
   margin-bottom: 70px;
+  padding: 0;
 }
 
 .feinmann-subtitle {
@@ -239,7 +258,9 @@ p:last-child {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
+  margin-bottom: 0;
   text-align: center;
+  padding: 0;
 }
 
 .feinmann-link {
@@ -249,6 +270,8 @@ p:last-child {
   position: absolute;
   top: 50%;
   right: 48px;
+  color: #2f80ed;
+  padding: 0;
 }
 
 .feinmann-link::after {
@@ -344,10 +367,12 @@ p:last-child {
   font-size: 18px;
   margin-bottom: 18px;
   margin-top: 18px;
+  margin-right: 0;
   bottom: 0;
   left: 0;
   font-weight: normal;
   color: white;
+  padding: 0;
 }
 
 .footer__social-icons {
@@ -374,6 +399,7 @@ p:last-child {
   font-weight: bold;
   margin-bottom: 20px;
   margin-top: 0;
+  padding: 0;
 }
 
 .footer__columm-links {
