@@ -40,7 +40,7 @@ section {
   background-position: center;
 }
 
-.logo__place_header {
+.logo_place_header {
   width: 183px;
   height: 32px;
   position: absolute;
@@ -60,6 +60,8 @@ section {
   z-index: 3;
   align-self: center;
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .header__square-pic {
@@ -79,7 +81,6 @@ section {
   height: 608px;
   right: 0;
   bottom: 0;
-  max-width: 50%;
   z-index: 2;
 }
 
@@ -93,22 +94,20 @@ section {
   font-weight: normal;
   margin: 0;
   padding: 0;
+  z-index: 3;
 }
 
-.header_link {
+.header__link {
   color: #2f80ed;
   line-height: 25px;
   font-size: 18px;
   padding: 0;
+  text-decoration: none;
 }
 
 .header_link::after {
   content: "\2192";
   color: #2f80ed;
-}
-
-a {
-  text-decoration: none;
 }
 
 .description {
@@ -119,13 +118,13 @@ a {
   margin-top: 0;
 }
 
-.two-colomns__span-accent {
+.two-columns__span-accent {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 34px;
 }
 
-.two-colomns {
+.two-columns {
   display: flex;
   width: 80%;
   justify-content: space-between;
@@ -133,7 +132,7 @@ a {
   position: relative;
 }
 
-.two-colomns__brief {
+.two-columns__brief {
   line-height: 1.2;
   font-size: 18px;
   color: #2f80ed;
@@ -143,7 +142,7 @@ a {
   margin: 0;
 }
 
-.two-colomns__main-text {
+.two-columns__main-text {
   width: 80%;
   min-width: 784px;
   display: flex;
@@ -151,7 +150,7 @@ a {
   justify-content: space-between;
 }
 
-.two-colomns__paragraph {
+.two-columns__paragraph {
   font-size: 24px;
   line-height: 34px;
   margin-top: 30px;
@@ -177,6 +176,7 @@ p:last-child {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  margin-top: 0;
   margin-bottom: 20px;
   padding: 0;
 }
@@ -188,6 +188,8 @@ p:last-child {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
 }
 
@@ -224,6 +226,7 @@ p:last-child {
   font-size: 18px;
   font-weight: normal;
   margin-top: 20px;
+  margin-bottom: 0;
   padding: 0;
 }
 
@@ -234,11 +237,10 @@ p:last-child {
   background-position: left bottom;
   background-repeat: no-repeat;
   position: relative;
-  padding-top: 100px;
   padding-bottom: 0;
 }
 
-.feinmann-title {
+.feynman-title {
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
@@ -249,9 +251,10 @@ p:last-child {
   width: 648px;
   margin-bottom: 70px;
   padding: 0;
+  padding-top: 100px;
 }
 
-.feinmann-subtitle {
+.feynman-subtitle {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -263,7 +266,7 @@ p:last-child {
   padding: 0;
 }
 
-.feinmann-link {
+.feynman__link {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -272,9 +275,10 @@ p:last-child {
   right: 48px;
   color: #2f80ed;
   padding: 0;
+  text-decoration: none;
 }
 
-.feinmann-link::after {
+.feynman__link::after {
   content: "\2192";
 }
 
@@ -288,11 +292,11 @@ p:last-child {
   z-index: 1;
 }
 
-.section__title_theme_dark {
+.section-title_theme_dark {
   color: white;
 }
 
-.section__subtitle_theme_dark {
+.section-subtitle_theme_dark {
   color: white;
 }
 
@@ -311,7 +315,7 @@ p:last-child {
   color: white;
 }
 
-.kaufman-triangle {
+.kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
   position: absolute;
   width: 877px;
@@ -343,15 +347,22 @@ p:last-child {
   padding-bottom: 40px;
 }
 
-.footer__column_content_copyright {
+.footer__column {
   display: flex;
   flex-direction: column;
-  flex-basis: 711px;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  margin-top:0;
+  margin-bottom:0;
+  margin-left:0;
+  margin-right:0;
 }
 
-.logo__place_footer {
+.footer__column_content_copyright {
+  display: flex;
+  flex-basis: 711px;
+  justify-content: space-between;
+}
+
+.logo_place_footer {
   display: flex;
   width: 183px;
   height: 35px;
@@ -375,7 +386,7 @@ p:last-child {
   padding: 0;
 }
 
-.footer__social-icons {
+.footer__social-icon {
   background-size: contain;
   position: relative;
   width: 16px;
@@ -393,16 +404,16 @@ p:last-child {
   margin: 0;
 }
 
-.footer__columm-heading {
+.footer__column-heading {
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   margin-top: 0;
   padding: 0;
 }
 
-.footer__columm-links {
+.footer__column-links {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
@@ -411,13 +422,11 @@ p:last-child {
   padding: 0;
 }
 
-.footer__columm-links a:link {
+.footer__column-link {
   color: white;
-}
-
-li span {
-  color: white;
-}
-.footer__columm-links a {
-  color: white;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0;
+  text-decoration: none;
 }
