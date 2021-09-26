@@ -158,6 +158,66 @@ section {
   margin-bottom: 0;
 }
 
+.techniques {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 920px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  gap: 100px;
+}
+
+.cards__item {
+  margin-top: 60px;
+  padding: 0;
+  width: 240px;
+}
+
+.cards__item:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.cards__title {
+  line-height: 1.15;
+  font-size:24px;
+  font-weight: bold;
+  margin-top:43px;
+  margin-bottom:16px;
+  text-align: center;
+}
+
+.cards__description {
+  margin-top:16px;
+  margin-bottom: 0;
+  line-height: 23px;
+  font-size:18px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
 .digits {
   margin-top: 100px;
   margin-bottom: 100px;
