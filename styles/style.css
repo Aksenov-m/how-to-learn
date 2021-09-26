@@ -8,7 +8,16 @@ section {
  /* border: 1px solid red; */
   /* margin: 0;*/
 
-.page {
+  @keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+  .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
@@ -72,6 +81,13 @@ section {
   top: 64px;
   right: 0;
   z-index: 1;
+}
+
+.rotation {
+  /*transform: rotate(360deg);*/
+  /*transition: transform 20s linear;*/
+  animation: rotation 20s linear infinite;
+  overflow: hidden;
 }
 
 .header__main-illustration {
