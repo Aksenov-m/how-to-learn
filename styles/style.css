@@ -234,6 +234,30 @@ section {
   margin-bottom: 0px;
 }
 
+.video {
+margin-top: 100px;
+overflow : visible
+}
+
+.video__iframes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  gap: 20px;
+  position: relative;
+  bottom: -50px;
+}
+
+.video__iframe {
+border: 0;
+width: 515px;
+height: 316px;
+}
+
 .digits {
   margin-top: 100px;
   margin-bottom: 100px;
