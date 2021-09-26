@@ -254,8 +254,11 @@ overflow : visible
 
 .video__iframe {
 border: 0;
-width: 515px;
-height: 316px;
+}
+
+.oakley {
+  padding-top: 160px;
+  background-color: #f2f2f2;
 }
 
 .digits {
