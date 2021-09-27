@@ -125,6 +125,11 @@ section {
   content: "\2192";
 }
 
+.header__link:hover {
+  opacity: 40%;
+  transition: opacity 1s linear 0.2s;
+}
+
 .description {
   margin-top: 100px;
 }
@@ -277,6 +282,7 @@ border: 0;
   margin-top: 0;
   margin-bottom: 20px;
   padding: 0;
+  border: 0;
 }
 
 .section-subtitle {
@@ -289,6 +295,7 @@ border: 0;
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
+  border: 0;
 }
 
 .table {
@@ -349,6 +356,7 @@ border: 0;
   font-weight: normal;
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
 .khan__title {
@@ -357,16 +365,20 @@ border: 0;
   font-weight: bold;
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
 .khan__quote {
   width: 790px;
   margin-top: 50px;
   margin-bottom: 36px;
+  margin-left: 0;
+  margin-right: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   padding: 0;
+  border: 0;
 }
 
 .khan__quote-author {
@@ -412,6 +424,11 @@ border: 0;
 
 .khan__buy-link::after {
   content: "\2192";
+}
+
+.khan__buy-link:hover {
+  opacity: 40%;
+  transition: opacity 1s linear 0.2s;
 }
 
 .feynman {
@@ -466,6 +483,11 @@ border: 0;
   content: "\2192";
 }
 
+.feynman__link:hover {
+  opacity: 40%;
+  transition: opacity 1s linear 0.2s;
+}
+
 .kaufman {
   background-color: #1f1f1f;
   padding-top: 90px;
@@ -510,6 +532,32 @@ border: 0;
   background-size: contain;
   z-index: -1;
   background-position: center;
+}
+
+.resources {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 217px;
+}
+
+.resources__logo-zone {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 80px;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resourses__logo {
+  width: 270px;
+  height: 38px;
+}
+
+.resourses__logo:hover {
+  opacity: 40%;
+  transition: opacity 1s linear 0.2s;
 }
 
 .footer {
