@@ -1,6 +1,6 @@
 .logo_place_footer {
-  display: flex;
   width: 183px;
   height: 35px;
+  display: flex;
   background-image: url(../../../images/logo_place_footer.svg);
 }

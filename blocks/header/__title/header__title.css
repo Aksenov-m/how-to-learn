@@ -1,14 +1,14 @@
 .header__title {
-  width: 730px;
+  min-width: 730px;
   text-align: left;
   line-height: 96px;
   font-size: 102px;
-  margin-left: 64px;
   color: black;
   font-weight: bold;
   z-index: 3;
   align-self: center;
+  margin: 0;
+  margin-left: 64px;
   padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  white-space: pre-line;
 }
