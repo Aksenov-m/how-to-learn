@@ -11,5 +11,4 @@
   /*transform: rotate(360deg);*/
   /*transition: transform 20s linear;*/
   animation: rotation 20s linear infinite;
-  overflow: hidden;
 }

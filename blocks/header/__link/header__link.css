@@ -4,7 +4,7 @@
   font-size: 18px;
   padding: 0;
   text-decoration: none;
-  transition: opacity 3s linear 0.2s;
+  transition: opacity 0.3s linear 0.2s;
 }
 
 .header__link::after {
